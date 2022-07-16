@@ -6,13 +6,8 @@ import {Router} from "@angular/router";
   templateUrl: './navbar-top.component.html',
   styleUrls: ['./navbar-top.component.css']
 })
-export class NavbarTopComponent implements OnInit {
+export class NavbarTopComponent {
 
   @Input() routes: { label: string, route: string }[] = [];
-
-  constructor(private router: Router) { }
-
-  ngOnInit(): void {
-  }
 
 }

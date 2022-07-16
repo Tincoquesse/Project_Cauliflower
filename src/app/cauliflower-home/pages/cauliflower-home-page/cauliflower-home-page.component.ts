@@ -5,11 +5,6 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './cauliflower-home-page.component.html',
   styleUrls: ['./cauliflower-home-page.component.css']
 })
-export class CauliflowerHomePageComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+export class CauliflowerHomePageComponent {
 
 }
