@@ -11,8 +11,6 @@ import { NavbarTopComponent } from './components/navbar-top/navbar-top.component
   imports: [
     CommonModule
   ],
-  exports: [
-    NavbarTopComponent
-  ]
+
 })
 export class SharedModule { }
