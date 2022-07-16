@@ -20,6 +20,7 @@ export class AppComponent {
       label: 'Offer',
       route: RoutesConfig.offerPage,
     },
+    
   ];
 
 }
