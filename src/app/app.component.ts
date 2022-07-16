@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {RoutesConfig} from "./app-routing.module";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Project_Cauliflower';
+
+
+  routes: { label: string, route: string }[] = [
+    {
+      label: 'Home',
+      route: RoutesConfig.homePage,
+    },
+    {
+      label: 'Offer',
+      route: RoutesConfig.offerPage,
+    },
+  ];
+
 }
