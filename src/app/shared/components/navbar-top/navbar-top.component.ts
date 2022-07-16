@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Router} from "@angular/router";
+import {Routes} from "../../model/routes";
 
 @Component({
   selector: 'app-navbar-top',
@@ -8,6 +8,6 @@ import {Router} from "@angular/router";
 })
 export class NavbarTopComponent {
 
-  @Input() routes: { label: string, route: string }[] = [];
+  @Input() routes: Routes[] = [];
 
 }

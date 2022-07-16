@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {RoutesConfig} from "./app-routing.module";
+import {Routes} from "./shared/model/routes";
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,7 @@ export class AppComponent {
   title = 'Project_Cauliflower';
 
 
-  routes: { label: string, route: string }[] = [
+  routes: Routes[] = [
     {
       label: 'Home',
       route: RoutesConfig.homePage,
