@@ -17,7 +17,7 @@ const routes: Routes = [
     path: RoutesConfig.offerPage,
     component: CauliflowerOfferPageComponent
   },
-  {path: '', redirectTo: RoutesConfig.homePage, pathMatch: 'full'},
+  // {path: '', redirectTo: RoutesConfig.homePage, pathMatch: 'full'},
 ];
 
 @NgModule({
