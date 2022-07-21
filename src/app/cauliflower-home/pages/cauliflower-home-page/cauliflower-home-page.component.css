@@ -1,14 +1,14 @@
-:root {
-  --color: #4973ff;
-}
+/*:root {*/
+/*  --color: #4973ff;*/
+/*}*/
 
-body {
-  font-size: 16px;
-  font-family: 'Montserrat', sans-sherif;
-  margin: 0;
-  padding: 0;
+/*body {*/
+/*  font-size: 16px;*/
+/*  font-family: 'Montserrat', sans-sherif;*/
+/*  margin: 0;*/
+/*  padding: 0;*/
 
-}
+/*}*/
 
 .content {
   max-width: 600px;
@@ -35,13 +35,13 @@ body {
   color: rgba(255, 255, 255, 0.9);
 }
 
-.hero p {
-  position: relative;
-  z-index: 1;
-  font-size: 1.1rem;
-  color: rgba(255, 255, 255, 0.5);
-  line-height: 1.4;
-}
+/*.hero p {*/
+/*  position: relative;*/
+/*  z-index: 1;*/
+/*  font-size: 1.1rem;*/
+/*  color: rgba(255, 255, 255, 0.5);*/
+/*  line-height: 1.4;*/
+/*}*/
 
 /* ========================= */
 
