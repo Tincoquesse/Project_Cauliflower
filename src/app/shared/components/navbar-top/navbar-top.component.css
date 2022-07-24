@@ -3,6 +3,7 @@
 }
 .inqoo-logo{
   max-height: 10vh;
+  cursor: pointer;
 }
 .paddington{
   font-family: Arial;
