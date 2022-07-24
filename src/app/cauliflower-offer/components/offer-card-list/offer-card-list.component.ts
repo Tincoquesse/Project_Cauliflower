@@ -1,7 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import {Category} from "../../../api/model/Category";
 import {CauliflowerService} from "../../../api/service/cauliflower.service";
-import {map} from "rxjs";
+import {map, NEVER} from "rxjs";
+import {Router} from "@angular/router";
+import {RoutesConfig} from "../../../app-routing.module";
 
 @Component({
   selector: 'app-offer-card-list',
@@ -12,7 +14,8 @@ export class OfferCardListComponent implements OnInit {
 
   categories: Category[] = [];
 
-  constructor(private service: CauliflowerService) {
+  constructor(private service: CauliflowerService,
+              private router: Router) {
   }
 
   ngOnInit(): void {
@@ -22,4 +25,9 @@ export class OfferCardListComponent implements OnInit {
       this.categories = results
     });
   }
+
+  onClick(category: string) {
+    this.router.navigate([RoutesConfig.subPage, category]);
+  }
 }
+

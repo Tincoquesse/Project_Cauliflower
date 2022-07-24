@@ -2,6 +2,7 @@
   <app-offer-card *ngFor="let category of categories"
                   [category]="category"
                   [closeDelay]="200" [openDelay]="100"
-                  class="col " ngbTooltip="{{category?.description}}">
+                  class="col " ngbTooltip="{{category?.description}}"
+                  (click)="onClick(category.name)">
   </app-offer-card>
 </div>
