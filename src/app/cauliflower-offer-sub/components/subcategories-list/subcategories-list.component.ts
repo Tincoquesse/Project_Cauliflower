@@ -1,9 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Subcategory} from "../../../api/model/Subcategory";
 import {CauliflowerService} from "../../../api/service/cauliflower.service";
-import {delay, map, switchMap, tap} from "rxjs";
-import {Category} from "../../../api/model/Category";
-import {ActivatedRoute, Route, Router, RouterStateSnapshot} from "@angular/router";
+import {map, switchMap, tap} from "rxjs";
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-subcategories-list',
@@ -12,9 +11,10 @@ import {ActivatedRoute, Route, Router, RouterStateSnapshot} from "@angular/route
 })
 export class SubcategoriesListComponent implements OnInit {
 
-  subcategories: Subcategory[] =[];
+  subcategories: Subcategory[] = [];
 
-  constructor(private service: CauliflowerService, private route: ActivatedRoute) { }
+  constructor(private service: CauliflowerService, private route: ActivatedRoute) {
+  }
 
   ngOnInit(): void {
     this.route.params.pipe(
@@ -23,5 +23,4 @@ export class SubcategoriesListComponent implements OnInit {
       tap(results => this.subcategories = results)
     ).subscribe();
   }
-
 }

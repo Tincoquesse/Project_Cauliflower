@@ -1,4 +1,4 @@
-export interface Subcategory{
+export interface Subcategory {
   "name": string;
   "trainings": []
 }
