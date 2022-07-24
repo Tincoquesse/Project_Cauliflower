@@ -9,7 +9,7 @@ import {
 export const enum RoutesConfig {
   homePage = 'home-page',
   offerPage = 'offer',
-  subPage = 'sub'
+  subPage = 'trainings'
 }
 
 const routes: Routes = [
