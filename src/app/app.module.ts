@@ -9,6 +9,7 @@ import {RouterModule} from "@angular/router";
 import {SharedModule} from "./shared/shared.module";
 
 import { HttpClientModule} from "@angular/common/http";
+import {CauliflowerOfferSubModule} from "./cauliflower-offer-sub/cauliflower-offer-sub.module";
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { HttpClientModule} from "@angular/common/http";
     AppRoutingModule,
     RouterModule,
     SharedModule,
-    HttpClientModule
+    HttpClientModule,
+    CauliflowerOfferSubModule
   ],
   providers: [],
   bootstrap: [AppComponent]
