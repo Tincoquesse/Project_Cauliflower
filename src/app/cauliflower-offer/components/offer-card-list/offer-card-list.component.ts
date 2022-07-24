@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Category} from "../../../api/model/Category";
 import {CauliflowerService} from "../../../api/service/cauliflower.service";
 import {map} from "rxjs";
@@ -8,7 +8,7 @@ import {map} from "rxjs";
   templateUrl: './offer-card-list.component.html',
   styleUrls: ['./offer-card-list.component.css']
 })
-export class OfferCardListComponent implements OnInit{
+export class OfferCardListComponent implements OnInit {
 
   categories: Category[] = [];
 
