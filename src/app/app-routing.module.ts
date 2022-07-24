@@ -8,8 +8,8 @@ import {
 
 export const enum RoutesConfig {
   homePage = 'home-page',
-  offerPage = 'cauliflower-offer',
-  subPage = 'cauliflower-offer-sub'
+  offerPage = 'offer',
+  subPage = 'sub'
 }
 
 const routes: Routes = [
@@ -18,7 +18,7 @@ const routes: Routes = [
     component: CauliflowerHomePageComponent
   },
   {
-    path: RoutesConfig.subPage,
+    path: `${RoutesConfig.subPage}/:category`,
     component: CauliflowerOfferSubPageComponent
   },
   {

@@ -26,8 +26,8 @@ export class OfferCardListComponent implements OnInit {
     });
   }
 
-  onClick() {
-    this.router.navigateByUrl(RoutesConfig.subPage).then(r => NEVER);
+  onClick(category: string) {
+    this.router.navigate([RoutesConfig.subPage, category]);
   }
 }
 

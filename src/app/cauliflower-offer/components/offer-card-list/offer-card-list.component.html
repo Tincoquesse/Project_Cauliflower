@@ -3,6 +3,6 @@
                   [category]="category"
                   [closeDelay]="200" [openDelay]="100"
                   class="col " ngbTooltip="{{category?.description}}"
-                  (click)="[onClick()]">
+                  (click)="onClick(category.name)">
   </app-offer-card>
 </div>
