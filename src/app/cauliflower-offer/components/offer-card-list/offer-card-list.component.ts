@@ -12,7 +12,6 @@ export class OfferCardListComponent implements OnInit {
 
   categories: Category[] = [];
 
-
   constructor(private service: CauliflowerService) {
   }
 
@@ -23,5 +22,4 @@ export class OfferCardListComponent implements OnInit {
       this.categories = results
     });
   }
-
 }

@@ -7,7 +7,7 @@ import {CauliflowerOfferModule} from "./cauliflower-offer/cauliflower-offer.modu
 import {AppRoutingModule} from "./app-routing.module";
 import {RouterModule} from "@angular/router";
 import {SharedModule} from "./shared/shared.module";
-import {ServiceModule} from "./api/service.module";
+
 import { HttpClientModule} from "@angular/common/http";
 
 
@@ -22,7 +22,6 @@ import { HttpClientModule} from "@angular/common/http";
     AppRoutingModule,
     RouterModule,
     SharedModule,
-    ServiceModule,
     HttpClientModule
   ],
   providers: [],
