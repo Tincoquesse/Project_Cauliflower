@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Subcategory} from "../../../api/model/Subcategory";
 
 @Component({
   selector: 'app-subcategory-container',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SubcategoryContainerComponent implements OnInit {
 
-  constructor() { }
+  @Input() subcategory: Subcategory | undefined;
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
