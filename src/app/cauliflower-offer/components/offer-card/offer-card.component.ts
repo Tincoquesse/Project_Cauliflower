@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Category} from "../../../api/model/Category";
 
 @Component({
   selector: 'app-offer-card',
@@ -7,4 +8,5 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OfferCardComponent {
 
+  @Input() category: Category| undefined;
 }

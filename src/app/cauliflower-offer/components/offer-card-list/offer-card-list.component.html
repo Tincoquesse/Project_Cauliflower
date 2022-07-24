@@ -1,1 +1,7 @@
-<p>offer-card-list works!</p>
+<div class="row row-cols-sm-auto">
+  <app-offer-card *ngFor="let category of categories"
+                  [category]="category"
+                  [closeDelay]="200" [openDelay]="100"
+                  class="col " ngbTooltip="{{category?.description}}">
+  </app-offer-card>
+</div>

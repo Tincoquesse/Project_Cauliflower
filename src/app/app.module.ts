@@ -8,6 +8,8 @@ import {AppRoutingModule} from "./app-routing.module";
 import {RouterModule} from "@angular/router";
 import {SharedModule} from "./shared/shared.module";
 
+import { HttpClientModule} from "@angular/common/http";
+
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import {SharedModule} from "./shared/shared.module";
     CauliflowerOfferModule,
     AppRoutingModule,
     RouterModule,
-    SharedModule
+    SharedModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
