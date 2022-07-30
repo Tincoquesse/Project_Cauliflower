@@ -1,4 +1,5 @@
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {Training} from "../../../api/model/Training";
 
 @Component({
   selector: 'app-subcategory-checkbox',
@@ -7,4 +8,5 @@ import {Component} from '@angular/core';
 })
 export class SubcategoryCheckboxComponent {
 
+  @Input() training: Training| undefined;
 }

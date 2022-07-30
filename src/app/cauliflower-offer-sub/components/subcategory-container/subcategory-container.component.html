@@ -1,5 +1,6 @@
 <div class="checkbox-sub">
   <p>{{subcategory?.name}}</p>
-  <app-subcategory-checkbox></app-subcategory-checkbox>
+  <app-subcategory-checkbox *ngFor="let training of trainings"
+  [training]="training" ></app-subcategory-checkbox>
 </div>
 

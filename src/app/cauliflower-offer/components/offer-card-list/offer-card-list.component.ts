@@ -14,6 +14,7 @@ export class OfferCardListComponent implements OnInit {
 
   categories: Category[] = [];
 
+
   constructor(private service: CauliflowerService,
               private router: Router) {
   }
@@ -28,6 +29,10 @@ export class OfferCardListComponent implements OnInit {
 
   onClick(category: string) {
     this.router.navigate([RoutesConfig.subPage, category]);
+  }
+
+  onSubmit() {
+
   }
 }
 

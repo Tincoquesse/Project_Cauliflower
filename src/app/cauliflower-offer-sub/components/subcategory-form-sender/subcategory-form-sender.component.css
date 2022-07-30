@@ -1,0 +1,6 @@
+.containerForm{
+  outline: black solid 1px;
+  margin: 20px;
+  border-radius: 1em;
+  justify-items: center;
+}
