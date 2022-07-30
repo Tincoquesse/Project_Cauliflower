@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {FormControl, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-subcategory-form-sender',
@@ -8,9 +9,10 @@ import {Component} from '@angular/core';
 export class SubcategoryFormSenderComponent {
 
   trainings: string[] = [];
-  email: string = "";
+  email = new FormControl('', [Validators.required, Validators.email]);
+
 
   onSubmit() {
-//TODO: Email Send
+//TODO: email validation
   }
 }

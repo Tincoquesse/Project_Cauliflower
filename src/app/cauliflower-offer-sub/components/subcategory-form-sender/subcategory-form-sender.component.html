@@ -4,7 +4,7 @@
     <app-subcategories-list></app-subcategories-list>
 
     <div>
-      <input [ngModel]="email" (ngModelChange)="email = $event" class="input-lg" placeholder="Email" type="text">
+      <input [formControl]="email" class="input-lg" placeholder="Email" type="text">
     </div>
 
     <div>

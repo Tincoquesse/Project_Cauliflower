@@ -6,6 +6,7 @@ import { SubcategoryContainerComponent } from './components/subcategory-containe
 import { SubcategoriesListComponent } from './components/subcategories-list/subcategories-list.component';
 import { SubcategoryFormSenderComponent } from './components/subcategory-form-sender/subcategory-form-sender.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {NgbTooltipModule} from "@ng-bootstrap/ng-bootstrap";
 
 
 
@@ -20,7 +21,8 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    NgbTooltipModule
   ]
 })
 export class CauliflowerOfferSubModule { }
