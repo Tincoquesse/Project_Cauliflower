@@ -9,24 +9,22 @@ import {map} from "rxjs";
   templateUrl: './subcategory-container.component.html',
   styleUrls: ['./subcategory-container.component.css']
 })
-export class SubcategoryContainerComponent implements OnInit{
+export class SubcategoryContainerComponent implements OnInit {
 
   @Input() subcategory: Subcategory | undefined;
 
   trainings: Training[] = [];
 
-
   constructor(private service: CauliflowerService) {
   }
 
   ngOnInit(): void {
-    if (this.subcategory?.name){
+    if (this.subcategory?.name) {
       this.service.getTrainingsFromSubcategory(this.subcategory.name).pipe(
         map(data => data as Training[])
       ).subscribe(results => this.trainings = results);
     }
   }
-
 
 
 }
