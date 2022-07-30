@@ -1,4 +1,3 @@
-
 <div class="row row-cols-sm-auto">
   <app-offer-card *ngFor="let category of categories"
                   [category]="category"
@@ -6,6 +5,4 @@
                   class="col " ngbTooltip="{{category?.description}}"
                   (click)="onClick(category.name)">
   </app-offer-card>
-
 </div>
-
