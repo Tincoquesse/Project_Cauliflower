@@ -4,11 +4,11 @@
     <app-subcategories-list></app-subcategories-list>
 
     <div>
-      <input class="input-lg"  placeholder="Email" type="text">
+      <input (change)="$event" class="input-lg"  placeholder="Email" type="text">
     </div>
 
     <div>
-      <button class="btn btn-primary btn-lg btn-block">Submit</button>
+      <button (click)="onSubmit()" class="btn btn-primary btn-lg btn-block">Submit</button>
     </div>
 
   </div>
