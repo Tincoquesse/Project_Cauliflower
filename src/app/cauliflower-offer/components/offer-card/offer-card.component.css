@@ -8,11 +8,13 @@
   padding-top: 100px;
   text-align: center;
   justify-content: center;
+  box-shadow:0rem 1rem 2rem dimgrey;
 
 
 }
 .card-font{
-  font-size: large;
+  font-size: xx-large;
   text-align: center;
+  color: dimgrey;
 
 }
