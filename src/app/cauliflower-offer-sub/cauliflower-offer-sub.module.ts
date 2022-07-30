@@ -5,7 +5,7 @@ import { SubcategoryCheckboxComponent } from './components/subcategory-checkbox/
 import { SubcategoryContainerComponent } from './components/subcategory-container/subcategory-container.component';
 import { SubcategoriesListComponent } from './components/subcategories-list/subcategories-list.component';
 import { SubcategoryFormSenderComponent } from './components/subcategory-form-sender/subcategory-form-sender.component';
-import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 
 
@@ -17,9 +17,10 @@ import {ReactiveFormsModule} from "@angular/forms";
     SubcategoriesListComponent,
     SubcategoryFormSenderComponent
   ],
-    imports: [
-        CommonModule,
-        ReactiveFormsModule
-    ]
+  imports: [
+    CommonModule,
+    ReactiveFormsModule,
+    FormsModule
+  ]
 })
 export class CauliflowerOfferSubModule { }
