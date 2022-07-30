@@ -20,9 +20,11 @@ export class SubcategoryContainerComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    this.service.getTrainingsFromSubcategory("Java").pipe(
-      map(data => data as Training[])
-    ).subscribe(results => this.trainings = results);
+    if (this.subcategory?.name){
+      this.service.getTrainingsFromSubcategory(this.subcategory.name).pipe(
+        map(data => data as Training[])
+      ).subscribe(results => this.trainings = results);
+    }
   }
 
 
