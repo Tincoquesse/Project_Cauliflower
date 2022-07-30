@@ -11,7 +11,6 @@ export class SubcategoryFormSenderComponent {
   email: string = "";
 
   onSubmit() {
-
-  console.log(this.email);
+//TODO: Email Send
   }
 }

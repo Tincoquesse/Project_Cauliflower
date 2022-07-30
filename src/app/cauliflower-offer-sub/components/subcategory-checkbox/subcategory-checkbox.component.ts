@@ -9,4 +9,5 @@ import {Training} from "../../../api/model/Training";
 export class SubcategoryCheckboxComponent {
 
   @Input() training: Training| undefined;
+
 }
