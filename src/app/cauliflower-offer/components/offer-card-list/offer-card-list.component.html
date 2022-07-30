@@ -1,8 +1,11 @@
-<div class="row row-cols-sm-auto">
-  <app-offer-card *ngFor="let category of categories"
-                  [category]="category"
-                  [closeDelay]="200" [openDelay]="100"
-                  class="col " ngbTooltip="{{category?.description}}"
-                  (click)="onClick(category.name)">
-  </app-offer-card>
+<!--<div class="row row-cols-sm-auto">-->
+<div class="categories-container">
+<!--  <div class="row row-cols-2">-->
+    <app-offer-card *ngFor="let category of categories"
+                    [category]="category"
+                    [closeDelay]="200" [openDelay]="100"
+                    class="col-1 " ngbTooltip="{{category?.description}}"
+                    (click)="onClick(category.name)">
+    </app-offer-card>
+
 </div>

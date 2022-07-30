@@ -1,6 +1,18 @@
 .category {
   width: 18rem;
 }
-.card{
+.card-category{
   width: 18rem;
+  height: 18rem;
+  border-radius: 20px;
+  padding-top: 100px;
+  text-align: center;
+  justify-content: center;
+
+
+}
+.card-font{
+  font-size: large;
+  text-align: center;
+
 }
