@@ -7,7 +7,10 @@ import {Component} from '@angular/core';
 })
 export class SubcategoryFormSenderComponent {
 
+  trainings: string[] = [];
+  email: string = "";
+
   onSubmit() {
-  console.log("Submit working")
+//TODO: Email Send
   }
 }
