@@ -26,5 +26,8 @@ export class SubcategoryContainerComponent implements OnInit {
     }
   }
 
+  addTraining = (trainingName: string) => {
+    this.service.addTrainings(trainingName);
 
+  }
 }

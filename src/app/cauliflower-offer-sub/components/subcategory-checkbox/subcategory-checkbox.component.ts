@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {Training} from "../../../api/model/Training";
 
 @Component({
@@ -9,5 +9,11 @@ import {Training} from "../../../api/model/Training";
 export class SubcategoryCheckboxComponent {
 
   @Input() training: Training| undefined;
+  @Output() onDoneClick = new EventEmitter<string>();
+
+
+  doneClick() {
+      this.onDoneClick.emit(this.training?.name);
+  };
 
 }
