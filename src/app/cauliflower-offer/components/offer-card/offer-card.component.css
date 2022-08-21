@@ -13,6 +13,11 @@
   box-shadow: 0rem 1rem 2rem dimgrey;
 
 }
+.card-category:hover{
+  background: linear-gradient(#7597de, mediumslateblue);
+  cursor: pointer;
+}
+
 
 .card-font {
   font-size: xx-large;
@@ -24,3 +29,4 @@
 .categories-container {
   margin-top: 80px;
 }
+
