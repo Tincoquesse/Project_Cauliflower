@@ -12,10 +12,14 @@
   box-shadow:0rem 1rem 2rem dimgrey;
 
 
+
 }
 .card-font{
   font-size: xx-large;
   text-align: center;
   color: dimgrey;
 
+}
+.categories-container{
+  margin-top: 100px;
 }
