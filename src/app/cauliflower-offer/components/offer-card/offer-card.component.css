@@ -1,13 +1,13 @@
 .category {
-  width: 18rem;
+  width: 15rem;
 }
 
 .card-category {
   background-color: white;
-  width: 18rem;
-  height: 18rem;
+  width: 14rem;
+  height: 13rem;
   border-radius: 20px;
-  padding-top: 100px;
+  padding-top: 80px;
   text-align: center;
   justify-content: center;
   box-shadow: 0rem 1rem 2rem dimgrey;
@@ -22,5 +22,5 @@
 }
 
 .categories-container {
-  margin-top: 100px;
+  margin-top: 80px;
 }
