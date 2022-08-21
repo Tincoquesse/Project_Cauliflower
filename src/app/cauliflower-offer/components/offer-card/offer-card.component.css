@@ -1,7 +1,8 @@
 .category {
   width: 18rem;
 }
-.card-category{
+
+.card-category {
   background-color: white;
   width: 18rem;
   height: 18rem;
@@ -9,17 +10,18 @@
   padding-top: 100px;
   text-align: center;
   justify-content: center;
-  box-shadow:0rem 1rem 2rem dimgrey;
-
+  box-shadow: 0rem 1rem 2rem dimgrey;
 
 
 }
-.card-font{
+
+.card-font {
   font-size: xx-large;
   text-align: center;
   color: dimgrey;
 
 }
-.categories-container{
+
+.categories-container {
   margin-top: 100px;
 }
