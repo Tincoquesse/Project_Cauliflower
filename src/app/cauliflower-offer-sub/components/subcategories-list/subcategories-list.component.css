@@ -1,6 +1,14 @@
+.subcard-box {
+  background-color: white;
+  position: center;
+}
+
 .card-sub {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
+}
+.card-color {
+  background-color: white;
 }
