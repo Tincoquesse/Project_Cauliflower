@@ -1,4 +1,4 @@
-content {
+.content {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,11 +9,9 @@ content {
   width: 100%;
   min-height: 100vh;
   background: linear-gradient(#2b1055, #7597de);
-
 }
 
 .main img {
-
   top: 0;
   left: 0;
   width: 100%;
