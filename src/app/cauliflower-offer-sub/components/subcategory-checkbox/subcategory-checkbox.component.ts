@@ -1,7 +1,7 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {Training} from "../../../api/model/Training";
 import {StorageService} from "../../../storage/service/storage.service";
-import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
+
 
 @Component({
   selector: 'app-subcategory-checkbox',
@@ -15,7 +15,7 @@ export class SubcategoryCheckboxComponent {
   isChecked: boolean = false;
 
 
-  constructor(private storage: StorageService, public dialog: MatDialog) {
+  constructor(private storage: StorageService) {
   }
 
   doneClick() {
@@ -24,17 +24,7 @@ export class SubcategoryCheckboxComponent {
   };
 
 
-  openDialog(): void {
-    const dialogRef = this.dialog.open(DialogOverviewExampleDialog, {
-      width: '250px',
-      data: {name: this.name, animal: this.animal}
-    });
 
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-      this.animal = result;
-    });
-  }
 
-}
+
 }
