@@ -4,7 +4,8 @@ body::-webkit-scrollbar {
 }
 
 :root {
---deepblue: #2b1055;
---blue: #7597de;
+  --deepblue: #2b1055;
+  --blue: #7597de;
+  --white: #f8fbff;
 }
 
