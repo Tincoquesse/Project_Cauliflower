@@ -1,17 +1,17 @@
 .content {
-  margin: 0 ;
-  padding: 0 ;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
+
 .main {
   width: 100%;
   min-height: 100vh;
   background-image: url("src/assets/images/stars.png"), linear-gradient(#2b1055, #7597de);
-
 }
 
-.main img{
+.main img {
   top: 0;
   left: 0;
   width: 100%;

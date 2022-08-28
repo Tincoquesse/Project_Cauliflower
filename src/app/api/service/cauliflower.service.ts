@@ -39,7 +39,7 @@ export class CauliflowerService {
     return this.http.get<Training[]>(`${environment.cauliflowerAPI}training/${subcategory}`);
   }
 
-  sendOffer = (offer: Offer)  => {
+  sendOffer = (offer: Offer) => {
     return this.http.post(`${environment.cauliflowerAPI}offer`, offer).subscribe();
   }
 

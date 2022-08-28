@@ -8,9 +8,9 @@ import {Observable} from "rxjs";
   templateUrl: './subcategory-form-sender.component.html',
   styleUrls: ['./subcategory-form-sender.component.css']
 })
-export class SubcategoryFormSenderComponent implements OnInit{
+export class SubcategoryFormSenderComponent implements OnInit {
 
-  private trainings: Observable<string[]>|undefined;
+  private trainings: Observable<string[]> | undefined;
 
   constructor(private service: CauliflowerService) {
   }
@@ -20,11 +20,10 @@ export class SubcategoryFormSenderComponent implements OnInit{
   }
 
 
-
   email = new FormControl('', [Validators.required, Validators.email]);
 
   onSubmit() {
-    if(this.email.valid) {
+    if (this.email.valid) {
 
     }
   }

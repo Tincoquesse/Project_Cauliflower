@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Category} from "../../../api/model/Category";
 import {CauliflowerService} from "../../../api/service/cauliflower.service";
-import {map, NEVER} from "rxjs";
+import {map} from "rxjs";
 import {Router} from "@angular/router";
 import {RoutesConfig} from "../../../app-routing.module";
 

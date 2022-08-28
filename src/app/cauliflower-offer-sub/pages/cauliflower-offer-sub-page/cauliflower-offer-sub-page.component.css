@@ -1,0 +1,5 @@
+.main {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("src/assets/images/stars.png"), linear-gradient(#2b1055, #7597de);
+}
