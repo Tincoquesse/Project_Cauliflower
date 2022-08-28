@@ -23,7 +23,6 @@ import {NgbTooltipModule} from "@ng-bootstrap/ng-bootstrap";
     CommonModule,
     ReactiveFormsModule,
     FormsModule,
-    NgbTooltipModule
   ]
 })
 export class CauliflowerOfferSubModule {
