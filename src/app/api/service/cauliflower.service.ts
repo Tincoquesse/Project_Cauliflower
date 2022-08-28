@@ -28,15 +28,15 @@ export class CauliflowerService {
   }
 
   getAllCategories = (): Observable<Category[]> => {
-    return this.http.get<Category[]>(`${environment.cauliflowerAPI}category/all`);
+    return this.http.get<Category[]>(`${environment.cauliflowerAPI}categories`);
   }
 
   getSubcategoriesFromCategory = (category: String): Observable<Subcategory[]> => {
-    return this.http.get<Subcategory[]>(`${environment.cauliflowerAPI}subcategory/get/${category}`);
+    return this.http.get<Subcategory[]>(`${environment.cauliflowerAPI}subcategory/${category}`);
   }
 
   getTrainingsFromSubcategory = (subcategory: String): Observable<Training[]> => {
-    return this.http.get<Training[]>(`${environment.cauliflowerAPI}training/get/${subcategory}`);
+    return this.http.get<Training[]>(`${environment.cauliflowerAPI}training/${subcategory}`);
   }
 
   sendOffer = (offer: Offer)  => {
