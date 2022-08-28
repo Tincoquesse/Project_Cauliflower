@@ -2,6 +2,8 @@ import {Component, OnInit} from '@angular/core';
 import {FormControl, Validators} from "@angular/forms";
 import {CauliflowerService} from "../../../api/service/cauliflower.service";
 import {Observable} from "rxjs";
+import {Training} from "../../../api/model/Training";
+import {StorageService} from "../../../storage/service/storage.service";
 
 @Component({
   selector: 'app-subcategory-form-sender',
@@ -10,13 +12,13 @@ import {Observable} from "rxjs";
 })
 export class SubcategoryFormSenderComponent implements OnInit {
 
-  private trainings: Observable<string[]> | undefined;
+  private trainings: Observable<Training[]> | undefined;
 
-  constructor(private service: CauliflowerService) {
+  constructor(private storage: StorageService) {
   }
 
   ngOnInit(): void {
-    this.trainings = this.service.trainingNames;
+    this.trainings = this.storage.trainingOrderList;
   }
 
 

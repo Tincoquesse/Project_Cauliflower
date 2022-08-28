@@ -3,6 +3,7 @@ import {Subcategory} from "../../../api/model/Subcategory";
 import {CauliflowerService} from "../../../api/service/cauliflower.service";
 import {Training} from "../../../api/model/Training";
 import {map} from "rxjs";
+import {StorageService} from "../../../storage/service/storage.service";
 
 @Component({
   selector: 'app-subcategory-container',
@@ -15,7 +16,7 @@ export class SubcategoryContainerComponent implements OnInit {
 
   trainings: Training[] = [];
 
-  constructor(private service: CauliflowerService) {
+  constructor(private service: CauliflowerService, private storage: StorageService) {
   }
 
   ngOnInit(): void {
@@ -26,8 +27,8 @@ export class SubcategoryContainerComponent implements OnInit {
     }
   }
 
-  addTraining = (trainingName: string) => {
-    this.service.addTrainings(trainingName);
+  addTraining = (training: Training) => {
+    this.storage.addTrainings(training);
 
   }
 }

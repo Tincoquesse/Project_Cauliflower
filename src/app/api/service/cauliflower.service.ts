@@ -12,19 +12,7 @@ import {Offer} from "../model/Offer";
 })
 export class CauliflowerService {
 
-  private _trainingNames = new BehaviorSubject<string[]>([]);
-  readonly trainingNames = this._trainingNames.asObservable();
-
   constructor(private http: HttpClient) {
-  }
-
-  addTrainings = (name: string) => {
-    if (!this._trainingNames.getValue().includes(name)) {
-      this._trainingNames.next(this._trainingNames.getValue().concat(name));
-    } else {
-      this._trainingNames.next(this._trainingNames.getValue().filter(e => e !== name));
-    }
-    console.log(this._trainingNames);
   }
 
   getAllCategories = (): Observable<Category[]> => {

@@ -2,12 +2,12 @@
   <input class="form-check-input" (change)="doneClick()" type="checkbox" id="flexSwitchCheckChecked">
   <label
 
-    [closeDelay]="300" [openDelay]="100"
-    class="col " ngbTooltip="{{training?.description}}
-    Price: {{training?.price}}"
     class="form-check-label" for="flexSwitchCheckChecked">{{training?.name}}
-
   </label>
-
+  <div style="text-align: center" class="alert alert-warning " role="alert" *ngIf="isChecked">
+    <div>{{training?.description}}</div>
+    <div *ngFor="let trainer of training?.trainers">
+      <div>Teacher: {{trainer?.firstName}} {{trainer?.lastName}}</div>
+    </div>
+  </div>
 </div>
-
