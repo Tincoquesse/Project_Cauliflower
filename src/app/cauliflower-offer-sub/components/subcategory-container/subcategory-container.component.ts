@@ -28,7 +28,7 @@ export class SubcategoryContainerComponent implements OnInit {
   }
 
   addTraining = (training: Training) => {
-    this.storage.addTrainings(training);
+    this.storage.manageTrainings(training);
 
   }
 }

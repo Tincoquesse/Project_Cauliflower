@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Category} from "../model/Category";
-import {BehaviorSubject, Observable} from "rxjs";
+import {Observable} from "rxjs";
 import {environment} from "../../../environments/environment";
 import {Subcategory} from '../model/Subcategory';
 import {Training} from "../model/Training";
@@ -27,8 +27,7 @@ export class CauliflowerService {
     return this.http.get<Training[]>(`${environment.cauliflowerAPI}training/${subcategory}`);
   }
 
-  sendOffer = (offer: Offer) => {
-    return this.http.post(`${environment.cauliflowerAPI}offer`, offer).subscribe();
-  }
+  sendOffer = (offer: Offer) =>
+    this.http.post(`${environment.cauliflowerAPI}offer`, offer)
 
 }

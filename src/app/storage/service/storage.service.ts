@@ -21,12 +21,11 @@ export class StorageService {
     }
   }
 
-addTrainings = (training: Training) => {
+manageTrainings = (training: Training) => {
   if (!this._trainingOrderList.getValue().includes(training)) {
     this._trainingOrderList.next([...this._trainingOrderList.getValue(), training]);
   } else {
     this._trainingOrderList.next(this._trainingOrderList.getValue().filter(e => e.name !== training.name));
   }
-  console.log(this._trainingOrderList);
 }
 }
