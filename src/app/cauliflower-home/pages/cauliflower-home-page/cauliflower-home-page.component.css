@@ -8,7 +8,8 @@
 .main {
   width: 100%;
   min-height: 100vh;
-  background: var(--deepblue);
+  background: linear-gradient(var(--deepblue), var(--blue));
+
 }
 
 .main img {
