@@ -18,13 +18,12 @@ export class CauliflowerService {
   constructor(private http: HttpClient) {
   }
 
-  addTrainings = (name: string) => {
+  manageTraining = (name: string) => {
     if (!this._trainingNames.getValue().includes(name)) {
       this._trainingNames.next(this._trainingNames.getValue().concat(name));
     } else {
       this._trainingNames.next(this._trainingNames.getValue().filter(e => e !== name));
     }
-    console.log(this._trainingNames);
   }
 
   getAllCategories = (): Observable<Category[]> => {
@@ -39,8 +38,6 @@ export class CauliflowerService {
     return this.http.get<Training[]>(`${environment.cauliflowerAPI}training/${subcategory}`);
   }
 
-  sendOffer = (offer: Offer) => {
-    return this.http.post(`${environment.cauliflowerAPI}offer`, offer).subscribe();
-  }
+  sendOffer = (offer: Offer) => this.http.post(`${environment.cauliflowerAPI}offer`, offer)
 
 }

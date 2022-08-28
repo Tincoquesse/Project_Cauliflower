@@ -19,12 +19,12 @@ export class SubcategoryFormSenderComponent implements OnInit {
     this.trainings = this.service.trainingNames;
   }
 
-
+  /* TODO
   email = new FormControl('', [Validators.required, Validators.email]);
 
-  onSubmit() {
-    if (this.email.valid) {
+    onSubmit() {
+      if (this.email.valid) {
 
-    }
-  }
+      }
+    }*/
 }
