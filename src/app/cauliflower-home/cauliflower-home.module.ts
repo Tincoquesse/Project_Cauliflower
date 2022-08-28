@@ -1,7 +1,6 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { CauliflowerHomePageComponent } from './pages/cauliflower-home-page/cauliflower-home-page.component';
-
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {CauliflowerHomePageComponent} from './pages/cauliflower-home-page/cauliflower-home-page.component';
 
 
 @NgModule({
@@ -12,4 +11,5 @@ import { CauliflowerHomePageComponent } from './pages/cauliflower-home-page/caul
     CommonModule
   ]
 })
-export class CauliflowerHomeModule { }
+export class CauliflowerHomeModule {
+}

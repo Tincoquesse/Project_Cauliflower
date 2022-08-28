@@ -23,4 +23,6 @@ export class SubcategoriesListComponent implements OnInit {
       tap(results => this.subcategories = results)
     ).subscribe();
   }
+
+
 }

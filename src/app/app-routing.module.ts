@@ -1,7 +1,11 @@
 import {NgModule} from '@angular/core';
-import {CauliflowerOfferPageComponent} from "./cauliflower-offer/pages/cauliflower-offer-page/cauliflower-offer-page.component";
+import {
+  CauliflowerOfferPageComponent
+} from "./cauliflower-offer/pages/cauliflower-offer-page/cauliflower-offer-page.component";
 import {RouterModule, Routes} from "@angular/router";
-import {CauliflowerHomePageComponent} from "./cauliflower-home/pages/cauliflower-home-page/cauliflower-home-page.component";
+import {
+  CauliflowerHomePageComponent
+} from "./cauliflower-home/pages/cauliflower-home-page/cauliflower-home-page.component";
 import {
   CauliflowerOfferSubPageComponent
 } from "./cauliflower-offer-sub/pages/cauliflower-offer-sub-page/cauliflower-offer-sub-page.component";

@@ -1,0 +1,20 @@
+.content {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("src/assets/images/stars.png"), linear-gradient(var(--deepblue), var(--blue));
+}
+
+.main img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+

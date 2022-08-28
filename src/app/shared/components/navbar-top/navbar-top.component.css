@@ -1,12 +1,28 @@
-.nav-link:hover{
+.navbar-expand-lg {
+  position: fixed;
+  width: 100%;
+  padding: 8px 100px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: black;
+}
+
+.nav-link:hover {
   cursor: pointer;
 }
-.inqoo-logo{
-  max-height: 10vh;
+
+.inqoo-logo {
+  max-height: 5vh;
+  cursor: pointer;
 }
-.paddington{
-  padding-left: 100px;
-  padding-right: 100px;
-  font-family: Arial;
+
+.paddington {
+  flex-wrap: wrap;
+  font-family: "Arial";
+  font-weight: bold;
   font-size: xx-large;
+}
+
+.bi bi-facebook {
+  color: var(--deepblue);
 }

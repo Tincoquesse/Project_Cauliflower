@@ -4,6 +4,7 @@ import { CauliflowerOfferPageComponent } from './pages/cauliflower-offer-page/ca
 import { OfferCardComponent } from './components/offer-card/offer-card.component';
 import { OfferCardListComponent } from './components/offer-card-list/offer-card-list.component';
 import {NgbTooltipModule} from "@ng-bootstrap/ng-bootstrap";
+import {ReactiveFormsModule} from "@angular/forms";
 
 
 
@@ -18,7 +19,8 @@ import {NgbTooltipModule} from "@ng-bootstrap/ng-bootstrap";
   ],
     imports: [
         CommonModule,
-        NgbTooltipModule
+        NgbTooltipModule,
+        ReactiveFormsModule
     ]
 })
 export class CauliflowerOfferModule { }

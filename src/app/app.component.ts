@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {RoutesConfig} from "./app-routing.module";
 import {Routes} from "./shared/model/routes";
 
@@ -20,7 +20,7 @@ export class AppComponent {
       label: 'Offer',
       route: RoutesConfig.offerPage,
     },
-    
+
   ];
 
 }

@@ -1,6 +1,32 @@
 .category {
-  width: 18rem;
+  width: 15rem;
 }
-.card{
-  width: 18rem;
+
+.card-category {
+  background-color: white;
+  width: 14rem;
+  height: 13rem;
+  border-radius: 20px;
+  padding-top: 80px;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 0rem 1rem 2rem dimgrey;
+
 }
+.card-category:hover{
+  background: linear-gradient(var(--blue), var(--white));
+  cursor: pointer;
+}
+
+
+.card-font {
+  font-size: xx-large;
+  text-align: center;
+  color: dimgrey;
+
+}
+
+.categories-container {
+  margin-top: 80px;
+}
+

@@ -1,5 +1,8 @@
 <div class="checkbox-sub">
-  <p>{{subcategory?.name}}</p>
-  <app-subcategory-checkbox></app-subcategory-checkbox>
+  <p class="text-sub">{{subcategory?.name}}</p>
+  <app-subcategory-checkbox
+    (onDoneClick)="addTraining($event)"
+    *ngFor="let training of trainings"
+    [training]="training"></app-subcategory-checkbox>
 </div>
 
