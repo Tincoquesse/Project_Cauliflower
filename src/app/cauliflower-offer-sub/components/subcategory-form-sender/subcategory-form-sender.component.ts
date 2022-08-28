@@ -21,12 +21,12 @@ export class SubcategoryFormSenderComponent implements OnInit {
     this.trainings = this.storage.trainingOrderList;
   }
 
-
+  /* TODO
   email = new FormControl('', [Validators.required, Validators.email]);
 
-  onSubmit() {
-    if (this.email.valid) {
+    onSubmit() {
+      if (this.email.valid) {
 
-    }
-  }
+      }
+    }*/
 }

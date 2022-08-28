@@ -30,9 +30,9 @@ export class OfferCardListComponent implements OnInit {
   onClick(category: string) {
     this.router.navigate([RoutesConfig.subPage, category]);
   }
-
+ /*TODO
   onSubmit() {
 
-  }
+  }*/
 }
 
