@@ -24,5 +24,36 @@
 }
 
 .bi bi-facebook {
-  color: var(--deepblue);
+  color: blue;
 }
+.socialMedia{
+  position: center;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+div#bi-facebook{
+  float: left;
+  padding-left: 2rem;
+}
+div#bi-instagram{
+  float: left;
+  padding-left: 2rem;
+}
+div#bi-linkedin{
+  float: left;
+  padding-left: 2rem;
+}
+div#bi-youtube{
+  float: left;
+  padding-left: 2rem;
+}
+.socialMedia{
+}
+.bi{
+  -webkit-filter: grayscale(70%);
+}
+.bi:hover{
+  -webkit-filter: brightness(100%);
+}
+
