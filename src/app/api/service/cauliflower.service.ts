@@ -20,11 +20,11 @@ export class CauliflowerService {
   }
 
   getSubcategoriesFromCategory = (category: String): Observable<Subcategory[]> => {
-    return this.http.get<Subcategory[]>(`${environment.cauliflowerAPI}subcategory/${category}`);
+    return this.http.get<Subcategory[]>(`${environment.cauliflowerAPI}category/${category}/subcategories`);
   }
 
   getTrainingsFromSubcategory = (subcategory: String): Observable<Training[]> => {
-    return this.http.get<Training[]>(`${environment.cauliflowerAPI}training/${subcategory}`);
+    return this.http.get<Training[]>(`${environment.cauliflowerAPI}subcategory/${subcategory}/trainings`);
   }
 
   sendOffer = (offer: Offer) =>

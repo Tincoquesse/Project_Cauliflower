@@ -8,7 +8,7 @@
 .main {
   width: 100%;
   min-height: 100vh;
-  background-image: url("src/assets/images/stars.png"), linear-gradient(var(--deepblue), var(--blue));
+  background-image: url("src/assets/images/stars.png"), linear-gradient(var(--white), var(--blue));
 }
 
 .main img {
