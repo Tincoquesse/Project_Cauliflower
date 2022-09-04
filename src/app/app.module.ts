@@ -10,6 +10,7 @@ import {SharedModule} from "./shared/shared.module";
 
 import {HttpClientModule} from "@angular/common/http";
 import {CauliflowerOfferSubModule} from "./cauliflower-offer-sub/cauliflower-offer-sub.module";
+import {CauliflowerSummaryModule} from "./cauliflower-summary/cauliflower-summary.module";
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import {CauliflowerOfferSubModule} from "./cauliflower-offer-sub/cauliflower-off
     RouterModule,
     SharedModule,
     HttpClientModule,
-    CauliflowerOfferSubModule
+    CauliflowerOfferSubModule,
+    CauliflowerSummaryModule
   ],
   providers: [],
   bootstrap: [AppComponent]

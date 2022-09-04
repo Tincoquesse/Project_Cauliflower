@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Training} from "../../../api/model/Training";
 
 @Component({
   selector: 'app-training-card',
@@ -6,5 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./training-card.component.css']
 })
 export class TrainingCardComponent {
+
+  @Input() training: Training| undefined;
 
 }
