@@ -1,32 +1,21 @@
-import {Component, OnInit} from '@angular/core';
-import {FormControl, Validators} from "@angular/forms";
-import {CauliflowerService} from "../../../api/service/cauliflower.service";
+import {Component} from '@angular/core';
 import {Observable} from "rxjs";
 import {Training} from "../../../api/model/Training";
-import {StorageService} from "../../../storage/service/storage.service";
+import {Router} from "@angular/router";
+import {RoutesConfig} from "../../../app-routing.module";
 
 @Component({
   selector: 'app-subcategory-form-sender',
   templateUrl: './subcategory-form-sender.component.html',
   styleUrls: ['./subcategory-form-sender.component.css']
 })
-export class SubcategoryFormSenderComponent implements OnInit {
+export class SubcategoryFormSenderComponent {
+  
 
-  private trainings: Observable<Training[]> | undefined;
-
-  constructor(private storage: StorageService) {
+  constructor(private router: Router) {
   }
 
-  ngOnInit(): void {
-    this.trainings = this.storage.trainingOrderList;
+  onSubmit() {
+    this.router.navigateByUrl(RoutesConfig.summaryPage);
   }
-
-  /* TODO
-  email = new FormControl('', [Validators.required, Validators.email]);
-
-    onSubmit() {
-      if (this.email.valid) {
-
-      }
-    }*/
 }
