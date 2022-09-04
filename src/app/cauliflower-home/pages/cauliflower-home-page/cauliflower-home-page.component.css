@@ -1,22 +1,10 @@
-.content {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+.home-page-text {
+  display: flex;
+  justify-content: center;
+  color: var(--white);
+  text-shadow: dimgrey;
+  font-size: 5rem;
+  font-style: inherit;
+  padding-top: 15rem;
 }
-
-.main {
-  width: 100%;
-  min-height: 100vh;
-  background: linear-gradient(var(--deepblue), var(--blue));
-
-}
-
-.main img {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 

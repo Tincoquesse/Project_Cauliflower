@@ -9,3 +9,9 @@ body::-webkit-scrollbar {
   --white: #f8fbff;
 }
 
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(var(--deepblue), var(--white));
+
+}

@@ -9,11 +9,13 @@ import {
 import {
   CauliflowerOfferSubPageComponent
 } from "./cauliflower-offer-sub/pages/cauliflower-offer-sub-page/cauliflower-offer-sub-page.component";
+import {SummaryPageComponent} from "./cauliflower-summary/pages/summary-page/summary-page.component";
 
 export const enum RoutesConfig {
   homePage = 'home-page',
   offerPage = 'offer',
-  subPage = 'trainings'
+  subPage = 'trainings',
+  summaryPage = 'summary'
 }
 
 const routes: Routes = [
@@ -28,6 +30,10 @@ const routes: Routes = [
   {
     path: RoutesConfig.offerPage,
     component: CauliflowerOfferPageComponent
+  },
+  {
+    path: RoutesConfig.summaryPage,
+    component: SummaryPageComponent
   },
   {path: '', redirectTo: RoutesConfig.homePage, pathMatch: 'full'},
 ];
