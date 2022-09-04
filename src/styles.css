@@ -7,12 +7,14 @@ body::-webkit-scrollbar {
   --deepblue: #2b1055;
   --blue: #7597de;
   --white: #f8fbff;
+  --lightblue: #349cf1;
 }
 
 body {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(var(--bs-yellow), var(--deepblue))
+  background: url("src/assets/images/stars.png"),
+  linear-gradient(var(--deepblue), var(--bs-green)) no-repeat
 
 }
 
