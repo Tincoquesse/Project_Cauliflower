@@ -1,2 +1,10 @@
-
+.home-page-text {
+  display: flex;
+  justify-content: center;
+  color: var(--white);
+  text-shadow: dimgrey;
+  font-size: 5rem;
+  font-style: inherit;
+  padding-top: 15rem;
+}
 
