@@ -14,7 +14,7 @@ body {
   width: 100%;
   min-height: 100vh;
   background: url("src/assets/images/stars.png"),
-  linear-gradient(var(--deepblue), var(--bs-red)) no-repeat;
+  linear-gradient(var(--lightblue), var(--bs-red)) no-repeat;
 
 }
 
