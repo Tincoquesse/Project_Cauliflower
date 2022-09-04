@@ -12,7 +12,7 @@ body::-webkit-scrollbar {
 body {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(var(--bs-yellow), var(--deepblue))
+  background: linear-gradient(var(--bs-light), var(--blue))
 
 }
 

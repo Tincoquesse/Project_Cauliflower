@@ -1,4 +1,7 @@
 .training-card{
-  display: flex;
+  min-width: 30rem;
+  border-radius: 10px;
   background-color: aliceblue;
+  text-align: center;
+  margin: auto;
 }

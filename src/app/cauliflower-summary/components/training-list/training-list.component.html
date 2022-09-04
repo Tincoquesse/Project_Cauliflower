@@ -1,4 +1,5 @@
-<div><app-training-card class="training-list" *ngFor="let training of trainings|async ">
-  <div>{{training.name}}</div>
-</app-training-card>
+<div>
+  <app-training-card class="training-list" *ngFor="let training of trainings|async "
+                     [training]=training>
+  </app-training-card>
 </div>
