@@ -9,6 +9,7 @@
 
 .nav-link:hover {
   cursor: pointer;
+  color: var(--bs-green);
 }
 
 .inqoo-logo {
