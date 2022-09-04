@@ -6,8 +6,8 @@
   background-color: white;
   width: 14rem;
   height: 13rem;
-  border-radius: 20px;
-  padding-top: 80px;
+  border-radius: 2em;
+  padding-top: 4em;
   text-align: center;
   justify-content: center;
   box-shadow: 0rem 1rem 2rem dimgrey;
@@ -27,6 +27,6 @@
 }
 
 .categories-container {
-  margin-top: 80px;
+  margin-top: 8em;
 }
 
