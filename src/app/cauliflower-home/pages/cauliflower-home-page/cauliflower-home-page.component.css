@@ -8,3 +8,27 @@
   padding-top: 15rem;
 }
 
+.home-page-color{
+  filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(200%) contrast(100%);
+}
+.bg__img--button {
+  display: flex;
+  flex-wrap: wrap;
+  right: 45em;
+  height: 30vh;
+  margin-left: 2em;
+  margin-inside: 2em;
+  animation: rotate 8s linear infinite;
+
+}
+
+@keyframes slideDown {
+  from {transform: translateY(-30vh)}
+  to {transform: translateY(100vh)}
+}
+
+@keyframes rotate {
+  from {transform: rotate(0deg)}
+  to {transform: rotate(360deg)}
+}
+

@@ -19,5 +19,5 @@ body {
 }
 
 .card-color {
-  background: linear-gradient(var(--white), var(--lightblue))
+  background: white;
 }
