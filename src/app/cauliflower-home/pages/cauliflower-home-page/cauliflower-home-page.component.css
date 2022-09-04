@@ -9,7 +9,9 @@
   display: flex;
   flex-wrap: wrap;
   filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(400%) contrast(100%);
+
 }
+
 .bg__img--button {
   display: flex;
   flex-wrap: wrap;
