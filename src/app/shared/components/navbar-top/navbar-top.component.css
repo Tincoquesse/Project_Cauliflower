@@ -9,6 +9,7 @@
 
 .nav-link:hover {
   cursor: pointer;
+  color: var(--blue);
 }
 
 .inqoo-logo {
@@ -16,6 +17,11 @@
   max-height: 5vh;
   cursor: pointer;
   filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(400%) contrast(100%);
+
+}
+
+.inqoo-logo:hover {
+  color: var(--blue);
 }
 
 .paddington {
