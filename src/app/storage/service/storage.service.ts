@@ -14,18 +14,22 @@ export class StorageService {
   }
 
   isContainTraining = (training: Training | undefined): boolean => {
-    if (training !== undefined){
+    if (training !== undefined) {
       return this._trainingOrderList.getValue().includes(training);
-    }else{
+    } else {
       return false
     }
   }
 
-manageTrainings = (training: Training) => {
-  if (!this._trainingOrderList.getValue().includes(training)) {
-    this._trainingOrderList.next([...this._trainingOrderList.getValue(), training]);
-  } else {
-    this._trainingOrderList.next(this._trainingOrderList.getValue().filter(e => e.name !== training.name));
+  manageTrainings = (training: Training) => {
+    if (!this._trainingOrderList.getValue().includes(training)) {
+      this._trainingOrderList.next([...this._trainingOrderList.getValue(), training]);
+    } else {
+      this._trainingOrderList.next(this._trainingOrderList.getValue().filter(e => e.name !== training.name));
+    }
   }
-}
+  clearTrainingOrderList() {
+    this._trainingOrderList.next([]);
+  }
+
 }

@@ -24,6 +24,7 @@ export class SubcategoryContainerComponent implements OnInit {
       this.service.getTrainingsFromSubcategory(this.subcategory.name).pipe(
         map(data => data as Training[])
       ).subscribe(results => this.trainings = results);
+      this.storage.clearTrainingOrderList();
     }
   }
 
