@@ -1,14 +1,11 @@
 .home-page-text {
   display: flex;
   justify-content: center;
-  color: var(--white);
-  text-shadow: dimgrey;
-  font-size: 5rem;
-  font-style: inherit;
   padding-top: 15rem;
 }
 
 .home-page-color{
+  max-width: 80%;
   display: flex;
   flex-wrap: wrap;
   filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(400%) contrast(100%);
