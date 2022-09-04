@@ -5,11 +5,6 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './training-card.component.html',
   styleUrls: ['./training-card.component.css']
 })
-export class TrainingCardComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+export class TrainingCardComponent {
 
 }
