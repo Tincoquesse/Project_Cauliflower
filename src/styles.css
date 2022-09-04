@@ -14,10 +14,10 @@ body {
   width: 100%;
   min-height: 100vh;
   background: url("src/assets/images/stars.png"),
-  linear-gradient(var(--deepblue), var(--bs-green)) no-repeat
+  linear-gradient(var(--deepblue), var(--lightblue)) no-repeat
 
 }
 
-card-category{
-  background-color: yellow;
+.card-color {
+  background: linear-gradient(var(--white), var(--lightblue))
 }
