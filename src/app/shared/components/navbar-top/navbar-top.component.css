@@ -12,6 +12,7 @@
 }
 
 .inqoo-logo {
+  display: flex;
   max-height: 5vh;
   cursor: pointer;
 }
