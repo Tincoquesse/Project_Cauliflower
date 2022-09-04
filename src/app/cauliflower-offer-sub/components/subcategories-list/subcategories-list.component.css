@@ -1,6 +1,6 @@
 .subcat-list{
   display: flex;
-  flex-grow: 2;
+  flex-grow: 1;
   gap: 1em;
   flex-flow: row wrap;
   justify-content: space-around;
