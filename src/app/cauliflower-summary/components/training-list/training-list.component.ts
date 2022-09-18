@@ -19,8 +19,8 @@ export class TrainingListComponent implements OnInit {
   ngOnInit(): void {
     this.trainings = this.storageService.trainingOrderList;
   }
-
-  onSubmit() {
-
-  }
+  //TODO
+  // onSubmit() {
+  //
+  // }
 }

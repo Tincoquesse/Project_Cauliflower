@@ -19,5 +19,5 @@ body {
 }
 
 .card-color {
-  background: white;
+  background: var(--white);
 }
