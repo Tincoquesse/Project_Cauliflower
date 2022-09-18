@@ -1,10 +1,9 @@
 <div class="form-check form-switch">
   <input class="form-check-input" (change)="doneClick()" type="checkbox" id="flexSwitchCheckChecked">
   <label
-
     class="form-check-label" for="flexSwitchCheckChecked">{{training?.name}}
   </label>
-  <div class="alert alert-success text-allign" role="alert" *ngIf="isChecked">
-    <div>{{training?.description}}</div>
+  <div class="alert" role="alert" *ngIf="isChecked">
+    <div class="description">{{training?.description}}</div>
   </div>
 </div>

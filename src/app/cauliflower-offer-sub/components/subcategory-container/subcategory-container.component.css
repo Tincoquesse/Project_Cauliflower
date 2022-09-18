@@ -7,8 +7,15 @@
   box-shadow: 0 1rem 2rem dimgrey;
 
 }
+.container-main:hover{
+  background: linear-gradient(var(--blue), var(--white));
+}
 
 .text-sub {
+  justify-content: center;
   text-align: center;
   font-size: x-large;
+  font-weight: bold;
+  font-family: zombie;
+
 }
