@@ -2,12 +2,20 @@
   border-radius: 10px;
   margin-top: 6rem;
   width: 20rem;
-  height: 25rem;
+  min-height: 15rem;
+  height: auto;
   box-shadow: 0 1rem 2rem dimgrey;
 
 }
+.container-main:hover{
+  background: linear-gradient(var(--blue), var(--white));
+}
 
 .text-sub {
+  justify-content: center;
   text-align: center;
   font-size: x-large;
+  font-weight: bold;
+  font-family: zombie;
+
 }
