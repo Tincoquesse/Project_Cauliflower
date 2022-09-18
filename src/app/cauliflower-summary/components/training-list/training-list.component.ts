@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {StorageService} from "../../../storage/service/storage.service";
 import {Training} from "../../../api/model/Training";
 import {Observable} from "rxjs";
+import {FormControl, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-training-list',
@@ -11,6 +12,7 @@ import {Observable} from "rxjs";
 export class TrainingListComponent implements OnInit {
 
   public trainings: Observable<Training[]> | undefined;
+  email = new FormControl('', [Validators.email]);
 
   constructor(private storageService: StorageService) { }
 
@@ -18,4 +20,7 @@ export class TrainingListComponent implements OnInit {
     this.trainings = this.storageService.trainingOrderList;
   }
 
+  onSubmit() { //TODO
+
+  }
 }

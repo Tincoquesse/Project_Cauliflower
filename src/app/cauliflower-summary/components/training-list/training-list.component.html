@@ -1,5 +1,9 @@
-<div>
-  <app-training-card class="training-list" *ngFor="let training of trainings|async "
+<div class="training-list">
+  <app-training-card  *ngFor="let training of trainings|async "
                      [training]=training>
   </app-training-card>
 </div>
+<form class="form-email">
+  <input class="input" [formControl]="email">
+  <button (click)="onSubmit()" class="submit btn-primary">Send Offer</button>
+</form>
