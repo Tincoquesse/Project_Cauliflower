@@ -13,6 +13,10 @@ export class StorageService {
   constructor() {
   }
 
+  getTrainingListValue = () =>
+    this._trainingOrderList.getValue()
+
+
   isContainTraining = (training: Training | undefined): boolean => {
     if (training !== undefined) {
       return this._trainingOrderList.getValue().includes(training);

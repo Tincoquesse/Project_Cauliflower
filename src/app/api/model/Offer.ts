@@ -1,4 +1,6 @@
+import {Training} from "./Training";
+
 export interface Offer {
-  "trainings": string[],
-  "email": string
+  "trainings": Training[],
+  "email": String
 }

@@ -26,11 +26,9 @@ export class TrainingListComponent implements OnInit {
 
   onSubmit() {
     if (this.email.valid){
-      // let offer: Offer = {
-      //
-      // }
-      // this.service.sendOffer()
-      this.router.navigateByUrl(RoutesConfig.homePage)
+      // this.service.sendOffer(this.email.value? this.email.value : "").subscribe(() =>
+      // )
+        this.router.navigateByUrl(RoutesConfig.homePage)
     }
 
   }
