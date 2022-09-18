@@ -1,8 +1,8 @@
 <div class="training-card card-color">
   <h4>{{training?.name}}</h4>
-  <h5>{{training?.description}}</h5>
+  <h5 class="price-description">{{training?.description}}</h5>
   <div *ngFor="let trainer of training?.trainers">
     Trenerzy: {{trainer?.firstName}} {{trainer?.lastName}}
   </div>
-  <h5>Price: {{training?.price}}</h5>
+  <h5 class="price-font">Price: {{training?.price}}</h5>
 </div>

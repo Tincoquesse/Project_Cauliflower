@@ -5,3 +5,13 @@
   margin: auto;
   justify-content: center;
 }
+.price-font{
+  color: black;
+  font-family: Arial;
+  padding-top: 1rem;
+}
+.price-description{
+  color: black;
+  font-family: Arial;
+  padding-top: 1rem;
+}
