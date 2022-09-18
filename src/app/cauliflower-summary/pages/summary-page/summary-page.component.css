@@ -1,2 +1,12 @@
-
-
+.summary-font{
+  font-family: Arial;
+  color: var(--white);
+  font-size: 4rem;
+  text-align: center;
+}
+.summary-font-small{
+  font-family: Arial;
+  color: var(--white);
+  font-size: 2rem;
+  text-align: center;
+}

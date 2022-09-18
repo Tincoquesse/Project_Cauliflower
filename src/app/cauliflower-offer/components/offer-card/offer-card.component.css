@@ -1,24 +1,19 @@
-.category {
-  width: 15rem;
-}
-
 .card-category {
-  width: 14rem;
-  height: 13rem;
+  width: 15rem;
+  height: 15rem;
   border-radius: 2em;
-  padding-top: 4em;
-  text-align: center;
-  justify-content: center;
+  padding-top: 5em;
   box-shadow: 0rem 1rem 2rem dimgrey;
-
 }
-.card-category:hover{
+
+.card-category:hover {
   background: linear-gradient(var(--blue), var(--white));
   cursor: pointer;
 }
 
 
 .card-font {
+  font-family: Arial;
   font-size: xx-large;
   text-align: center;
   color: dimgrey;
