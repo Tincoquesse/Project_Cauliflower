@@ -17,3 +17,15 @@
   opacity: 80%;
   background-color: rgb(246, 246, 246, 30%);
 }
+.btn-outline-secondary{
+  justify-content: center;
+  text-align: center;
+  font-size: medium;
+  position: relative;
+  margin-right: 1rem;
+
+
+
+
+
+}
