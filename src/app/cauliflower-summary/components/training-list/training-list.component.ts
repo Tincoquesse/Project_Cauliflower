@@ -4,9 +4,8 @@ import {Training} from "../../../api/model/Training";
 import {Observable} from "rxjs";
 import {FormControl, Validators} from "@angular/forms";
 import {CauliflowerService} from "../../../api/service/cauliflower.service";
-import {Router, RouterLink} from "@angular/router";
+import {Router} from "@angular/router";
 import {RoutesConfig} from "../../../app-routing.module";
-import {Offer} from "../../../api/model/Offer";
 
 @Component({
   selector: 'app-training-list',
@@ -26,9 +25,10 @@ export class TrainingListComponent implements OnInit {
 
   onSubmit() {
     if (this.email.valid){
-      // this.service.sendOffer(this.email.value? this.email.value : "").subscribe(() =>
-      // )
-        this.router.navigateByUrl(RoutesConfig.endPage)
+      this.service.sendOffer(this.email.value? this.email.value : "")
+        .subscribe(() => this.router.navigateByUrl(RoutesConfig.endPage)
+      )
+
     }
 
   }
