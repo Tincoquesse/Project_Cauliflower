@@ -36,7 +36,6 @@ export class TrainingListComponent implements OnInit {
         }
       )
     }
-
   }
   hasEmailValidateError = (): boolean =>
     !!this.email.errors?.hasOwnProperty('email');
