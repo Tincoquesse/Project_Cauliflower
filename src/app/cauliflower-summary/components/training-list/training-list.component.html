@@ -5,6 +5,7 @@
   </app-training-card>
 </div>
 <form class="form-email">
+  <app-loading-spinner style="text-align: center; padding: 1rem" *ngIf="isLoading|async">Loading...</app-loading-spinner>
   <input class="input" [formControl]="email" placeholder="Wpisz adres email">
   <div class="form-group">
     <div *ngIf="hasEmailValidateError()" class="error">Wpisz poprawny adres email</div>
@@ -12,5 +13,5 @@
   <button *ngIf="email.valid && email.dirty" (click)="onSubmit()" class="submit btn-primary centerButton">Wyślij ofertę</button>
   <button *ngIf="!email.valid" class="submit btn-secondary centerButton">Wyślij ofertę</button>
 </form>
-<app-loading-spinner style="text-align: center; padding: 1rem" *ngIf="isLoading|async">Loading...</app-loading-spinner>
+
 </div>
