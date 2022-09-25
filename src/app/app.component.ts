@@ -17,7 +17,7 @@ export class AppComponent {
       route: RoutesConfig.homePage,
     },
     {
-      label: 'Offer',
+      label: 'Oferta',
       route: RoutesConfig.offerPage,
     },
 

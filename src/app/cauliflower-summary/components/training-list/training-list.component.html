@@ -4,10 +4,10 @@
   </app-training-card>
 </div>
 <form class="form-email">
-  <input class="input" [formControl]="email" placeholder="Type email">
+  <input class="input" [formControl]="email" placeholder="Wpisz adres email">
   <div class="form-group">
-    <div *ngIf="hasEmailValidateError()" class="error">Type correct email</div>
+    <div *ngIf="hasEmailValidateError()" class="error">Wpisz poprawny adres email</div>
   </div>
-  <button *ngIf="email.valid && email.dirty" (click)="onSubmit()" class="submit btn-primary">Send Offer</button>
-  <button *ngIf="!email.valid" class="submit btn-secondary">Send Offer</button>
+  <button *ngIf="email.valid && email.dirty" (click)="onSubmit()" class="submit btn-primary centerButton">Wyślij ofertę</button>
+  <button *ngIf="!email.valid" class="submit btn-secondary centerButton">Wyślij ofertę</button>
 </form>
