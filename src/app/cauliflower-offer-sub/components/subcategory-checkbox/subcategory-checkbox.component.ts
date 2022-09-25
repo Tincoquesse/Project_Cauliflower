@@ -13,6 +13,7 @@ export class SubcategoryCheckboxComponent {
   @Input() training: Training | undefined;
   @Output() onDoneClick = new EventEmitter<Training>();
   isChecked: boolean = false;
+  isDetails: boolean = false;
 
 
   constructor(private storage: StorageService) {
@@ -24,7 +25,7 @@ export class SubcategoryCheckboxComponent {
   };
 
 
-
-
-
+  onDetails() {
+    this.isDetails = !this.isDetails;
+  }
 }

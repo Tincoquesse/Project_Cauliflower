@@ -3,8 +3,8 @@
   <label
     class="form-check-label" for="flexSwitchCheckChecked">{{training?.name}}
   </label>
-  <button type="button" class="btn btn-outline-secondary">info</button>
-  <div class="alert" role="alert" *ngIf="isChecked">
+  <button (click)="onDetails()" type="button" class="btn btn-outline-secondary">info</button>
+  <div class="alert" role="alert" *ngIf="isDetails">
     <div class="description">{{training?.description}}</div>
   </div>
 </div>
