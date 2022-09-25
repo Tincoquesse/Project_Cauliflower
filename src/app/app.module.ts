@@ -28,7 +28,7 @@ import {CauliflowerEndPageModule} from "./cauliflower-end-page/cauliflower-end-p
     HttpClientModule,
     CauliflowerOfferSubModule,
     CauliflowerSummaryModule,
-    CauliflowerEndPageModule
+    CauliflowerEndPageModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

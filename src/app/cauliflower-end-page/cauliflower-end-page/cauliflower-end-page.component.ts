@@ -11,7 +11,7 @@ import {Router} from "@angular/router";
 export class CauliflowerEndPageComponent implements OnInit {
 
 
-  timeLeft: number = 3;
+  timeLeft: number = 2;
 
   private timeSubscription: Subscription | undefined;
 

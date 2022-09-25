@@ -4,6 +4,7 @@ import { TrainingCardComponent } from './components/training-card/training-card.
 import { SummaryPageComponent } from './pages/summary-page/summary-page.component';
 import { TrainingListComponent } from "./components/training-list/training-list.component";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {SharedModule} from "../shared/shared.module";
 
 
 
@@ -13,10 +14,11 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
     SummaryPageComponent,
     TrainingListComponent
   ],
-  imports: [
-    CommonModule,
-    FormsModule,
-    ReactiveFormsModule
-  ]
+    imports: [
+        CommonModule,
+        FormsModule,
+        ReactiveFormsModule,
+        SharedModule
+    ]
 })
 export class CauliflowerSummaryModule { }

@@ -1,3 +1,4 @@
+<div>
 <div class="training-list">
   <app-training-card *ngFor="let training of trainings|async "
                      [training]=training>
@@ -11,3 +12,5 @@
   <button *ngIf="email.valid && email.dirty" (click)="onSubmit()" class="submit btn-primary centerButton">Wyślij ofertę</button>
   <button *ngIf="!email.valid" class="submit btn-secondary centerButton">Wyślij ofertę</button>
 </form>
+<app-loading-spinner style="text-align: center; padding: 1rem" *ngIf="isLoading|async">Loading...</app-loading-spinner>
+</div>
